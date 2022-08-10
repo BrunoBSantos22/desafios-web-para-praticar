@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;800;900&display=swap');
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	background-color: #d6e1ffa2;
+	background-image: url('../images/pattern-background-desktop.svg');
+	background-repeat: no-repeat;
+	height: 97vh;
+	display: grid;
+    align-items: end;
+    justify-content: center;
+}
+
+main {
+	background-color: white;
+	width: 356px;
+	margin: auto;
+	border-radius: 1.1em;
+	text-align: center;
+}
+
+h1, h4 {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+}
+
+p {
+	color: hsl(224, 23%, 55%);
+}
+
+.img-hero {
+	width: 356px;
+	border-top-left-radius: 1.1em;
+    border-top-right-radius: 1.1em;
+}
+
+.info-plan {
+	background-color: hsl(225, 100%, 98%);
+	width: 310px;
+	height: 90px;
+	margin: auto;
+	border-radius: 0.7em;
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+}
+
+/* Botton-Change */
+.btn-change {
+	color: hsl(245, 75%, 52%);
+	font-weight: 700;
+}
+
+.btn-change:hover {
+	color: hsla(245, 75%, 52%, 0.74);
+	text-decoration: none;
+}
+
+
+/* Container-Bottons  Pay/Cancel */
+.btn-plan {
+	display: inline-grid;
+	padding-bottom: 20px;
+}
+
+
+/* Botton-Payment */
+.btn-pay {
+	background-color: hsl(245, 75%, 52%);
+	width: 310px;
+	padding: 12px;
+	margin: 25px 0px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 15px 15px 3px rgba(0, 0, 0, 0.123);
+}
+
+.btn-pay:hover {
+	background-color: hsla(245, 75%, 52%, 0.705);
+	cursor: pointer;
+}
+
+.btn-pay > a {
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+
+/* Botton-Cancel */
+.btn-cancel {
+	background-color: white;
+	border: none;
+}
+
+.btn-cancel > a {
+	color: hsl(224, 23%, 55%);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.btn-cancel > a:hover {
+	color: hsla(223, 47%, 23%, 0.89);
+}
+
+
+/* Footer */
+.attribution > a {
+	color: rgb(21, 21, 204);
+	text-decoration: none;
+}
+
+.attribution > a:hover {
+	color: rgb(13, 13, 138);
+}
+
+.attribution > a:active {
+	color: rgb(1, 1, 53);
+}
