@@ -1,8 +1,62 @@
-.attribution {
-	font-size: 11px; 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 95%);
+}
+
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+p, button {
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+	background-color: rgb(255, 255, 255);
+}
+
+.card-sedan {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.card-sedan > button {
+	color: hsl(31, 77%, 52%);
+}
+
+.card-suv {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.card-suv > button {
+	color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.card-luxury > button {
+	color: hsl(179, 100%, 13%);
+}
+
+footer {
 	text-align: center;
 }
 
-.attribution > a {
-	color: hsl(228, 45%, 44%);
+footer > a {
+	color: hsl(150, 93%, 40%);
+	text-decoration: none;
 }
