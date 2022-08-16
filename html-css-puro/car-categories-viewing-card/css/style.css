@@ -7,6 +7,32 @@
 
 body {
 	background-color: hsl(0, 0%, 95%);
+	font-size: 15px;
+}
+
+.container {
+	display: flex;
+    align-items: center;
+	height: 97vh;
+	
+}
+
+.content {
+	display: flex;
+	height: 30em;
+	width: 70em;
+	padding: 0 1em;
+    margin: auto;
+}
+
+.card-sedan, .card-suv, .card-luxury {
+	display: grid;
+}
+
+.info-sedan, .info-suv, .info-luxury {
+	display: grid;
+    padding-left: 2em;
+    align-content: space-evenly;
 }
 
 h1 {
@@ -26,13 +52,15 @@ p, button {
 
 button {
 	background-color: rgb(255, 255, 255);
+	width: 10em;
+    border-radius: 20px;
 }
 
 .card-sedan {
 	background-color: hsl(31, 77%, 52%);
 }
 
-.card-sedan > button {
+.info-sedan > button {
 	color: hsl(31, 77%, 52%);
 }
 
@@ -40,7 +68,7 @@ button {
 	background-color: hsl(184, 100%, 22%);
 }
 
-.card-suv > button {
+.info-suv > button {
 	color: hsl(184, 100%, 22%);
 }
 
@@ -48,7 +76,7 @@ button {
 	background-color: hsl(179, 100%, 13%);
 }
 
-.card-luxury > button {
+.info-luxury > button {
 	color: hsl(179, 100%, 13%);
 }
 
