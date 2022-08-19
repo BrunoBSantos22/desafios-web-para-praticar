@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: hsl(0, 0%, 95%);
+	background-color: hsl(0, 0%, 93%);
 	font-size: 15px;
 }
 
@@ -97,8 +97,10 @@ button:hover {
 	color: white;
 }
 
+/* Footer style */
 
 footer {
+	background-color: rgba(0, 255, 0, 0.096);
 	text-align: center;
 }
 
@@ -115,7 +117,18 @@ footer > a:active {
 	color: hsl(151, 95%, 15%);
 }
 
-@media (max-width: 680px) {
+/* Mobile Version */
+
+@media (max-width: 715px) {
+
+	img, h1, p  {
+		padding-bottom: 1.5em;
+	}
+
+	.container {
+		margin-top: 16em;
+		margin-bottom: 17em;
+	}
 
 	.content {
 		width: 35em;
@@ -131,10 +144,18 @@ footer > a:active {
 		padding: 2em;
 	}
 
+	.card-suv {
+		padding: 2em;
+	}
+
+	.card-luxury {
+		padding: 2em;
+		border-radius: 0 0 12px 12px;
+	}
+
 	.info-sedan, .info-suv, .info-luxury {
 		display: grid;
 		padding-left: 2em;
-		align-content: space-evenly;
 	}
 
 }
