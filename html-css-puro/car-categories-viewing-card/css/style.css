@@ -102,6 +102,7 @@ button:hover {
 footer {
 	background-color: rgba(0, 255, 0, 0.096);
 	text-align: center;
+	padding: 5px;
 }
 
 footer > a {
