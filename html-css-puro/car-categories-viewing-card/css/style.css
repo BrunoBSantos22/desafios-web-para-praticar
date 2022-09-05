@@ -9,18 +9,21 @@
 body {
 	background-color: hsl(0, 0%, 93%);
 	font-size: 15px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
 	display: flex;
     align-items: center;
-	height: 97vh;
+	flex: 1;
 }
 
 .content {
 	display: flex;
 	height: 30em;
-	width: 65em;
+	max-width: 65em;
 	padding: 0 1em;
     margin: auto;
 }
@@ -61,7 +64,7 @@ button:hover {
 
 .info-sedan, .info-suv, .info-luxury {
 	display: grid;
-    padding-left: 2em;
+    padding-inline: 2em;
     align-content: space-evenly;
 }
 
@@ -117,6 +120,8 @@ footer > a:active {
 	color: hsl(151, 95%, 15%);
 }
 
+
+
 /* Mobile Version */
 
 @media (max-width: 715px) {
@@ -125,13 +130,9 @@ footer > a:active {
 		padding-bottom: 1.5em;
 	}
 
-	.container {
-		margin-top: 16em;
-		margin-bottom: 17em;
-	}
-
 	.content {
 		width: 35em;
+		height: unset;
 		padding: 5em;
     	flex-direction: column;
     	justify-content: center;
