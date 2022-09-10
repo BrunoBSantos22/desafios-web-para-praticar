@@ -14,24 +14,8 @@
 }
 
 
-picture > img {
-	width: 100%;
-	margin: auto;
-	display: block;
-}
-
 body {
 	background-color: var(--background);
-}
-
-h1 {
-	font-family: 'Fraunces', serif;
-}
-
-p {
-	color: var(--paragrafo);
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
 }
 
 h4 {
@@ -40,6 +24,55 @@ h4 {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 6px;
+	margin-top: 0.6em;
+	margin-bottom: 0.8em;
+}
+
+h1 {
+	font-family: 'Fraunces', serif;
+	font-size: 2em;
+	margin: 0;
+}
+
+p {
+	color: var(--paragrafo);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+.price {
+
+}
+
+.new-price {
+	color: var(--button-e-price);
+	font-family: 'Fraunces', serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.old-price {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--paragrafo);
+	font-size: 13px;
+	text-decoration: line-through;
+}
+
+button {
+	background-color: var(--button-e-price);
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+button:hover {
+	background-color: hsl(158, 36%, 34%);
+}
+
+button:active {
+	background-color: hsl(159, 36%, 25%);
 }
 
 footer {
@@ -48,10 +81,14 @@ footer {
 	text-align: center;
 }
 
-button {
-	background-color: var(--button-e-price);
-	color: white;
-	border: none;
+footer > a {
+	color: hsl(228, 100%, 50%);
+	text-decoration: none;
+}
+
+footer > a:hover {
+	color: hsl(228, 98%, 38%);
+	text-decoration: underline;
 }
 
 
@@ -60,15 +97,47 @@ button {
 
 @media (max-width: 600px) {
 
-	picture > img {
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
+	body {
+		display: flex;
+		flex-direction: column;
 	}
 
 	main {
 		background-color: white;
-		width: 24em;
+		width: 22em;
 		margin: auto;
 		border-radius: 15px;
+	}
+
+	picture > img {
+		width: 100%;
+		margin: auto;
+		display: block;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+	.content {
+		padding: 1em;
+	}
+
+	.price {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1em;
+	}
+
+	.new-price {
+		margin-right: 0.8em;
+	}
+
+	button {
+		width: 24em;
+		padding: 1em;
+	}
+
+	.txt-cart {
+		font-family: 'Montserrat', sans-serif;
+		margin-left: 8px;
 	}
 }
