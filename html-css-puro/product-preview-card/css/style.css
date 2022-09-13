@@ -148,5 +148,24 @@ footer > a:active {
 
 
 @media (max-width: 650px) {
-	
+
+	main {
+		width: 22em;
+		display: flex;
+    	flex-direction: column;
+	}
+
+	picture > img {
+		width: 22em;
+		border-radius: 12px 12px 0 0;
+	}
+
+	.content {
+		width: unset;
+		margin: 1em;
+	}
+
+	footer {
+		font-size: 15px;
+	}
 }
